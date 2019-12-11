@@ -6,7 +6,11 @@ fn main() {
     let input = File::open("input.txt").expect("Couldn't read input file!");
     let reader = BufReader::new(input);
     for line in reader.lines() {
-        let mass: u32 = line.expect("No line!").trim().parse().expect("Line isn't parseable!");
+        let mass: u32 = line
+            .expect("No line!")
+            .trim()
+            .parse()
+            .expect("Line isn't parseable!");
         total += (mass / 3) - 2;
     }
     println!("{}", total);
