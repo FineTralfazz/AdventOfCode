@@ -12,7 +12,7 @@ namespace day07
 
             Console.WriteLine($"1: {Solve1()}");
             Console.WriteLine($"2: {Solve2()}");
-            Console.ReadLine();
+            //Console.ReadLine();
         }
 
         static int Solve1()
